@@ -36,6 +36,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}  
         port: ${{ secrets.PORT }}
         script: |
-          cd /domains/akoops.com/public_html/cicd
+          ls
+          cd domains/akoops.com/public_html/cicd
           git clone ${{ secrets.REPO }}
           
